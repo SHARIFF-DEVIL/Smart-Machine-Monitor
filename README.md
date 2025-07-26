@@ -32,15 +32,6 @@ Plotly
 
 CSV (for lightweight simulated storage)
 
-📁 Project Structure
-
-smart_factory_dashboard/
-├── machine_simulator.py      # Simulates machine data every few seconds
-├── dashboard.py              # Streamlit dashboard to visualize data
-├── data/
-│   └── machine_data.csv      # CSV file storing machine updates
-└── README.md                 # Project overview and instructions
-
 ▶️ How to Run
 
 Install Dependencies:
