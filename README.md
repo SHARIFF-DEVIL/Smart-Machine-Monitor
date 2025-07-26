@@ -1,58 +1,42 @@
-📊 Real-Time Smart Machine Monitoring Dashboard
+# 🏭 5G-Enabled Federated Learning for Real-Time Predictive Maintenance in Smart Factories
 
-🚀 Overview
+A smart industry simulation project that combines **5G, IoT, Federated Learning**, and **real-time dashboards** to detect machine failures before they occur — without using real hardware.
 
-This project simulates a smart industrial environment where multiple machines are monitored in real-time using a Streamlit dashboard. The data is auto-generated and updates live on the dashboard every few seconds, mimicking real-world IoT-enabled factory setups.
+---
 
-🎯 Purpose
+## 🚀 Project Overview
 
-To build a real-time, auto-refreshing dashboard that displays the health and status of various industrial machines using simulated IoT data — with no hardware required.
+This project simulates a modern Industry 4.0 factory floor with:
+- Multiple machines sending sensor data (e.g., temperature, vibration).
+- Real-time predictions on failure risk using **Federated Learning (FL)**.
+- Live updating dashboard using **Streamlit**.
+- Simulated network delays over **5G/WiFi**.
 
-🧠 Key Features
+> 📡 Built to demonstrate **edge-to-cloud ML processing** and predictive maintenance with **zero hardware**, ideal for research, IEEE publications, and academic demos.
 
-Simulates machine data (temperature, vibration, status)
+---
 
-Real-time data generation using Python
+## 🧠 Features
 
-Auto-refreshing Streamlit dashboard
+- ✅ Simulated **IoT Sensor Data** from multiple machines.
+- 🔁 **Federated Learning** for distributed model training.
+- 🌐 Simulated **5G and WiFi network** delays.
+- 📊 **Live Streamlit dashboard** with machine status and predictions.
+- 🔔 Real-time failure risk alerts (e.g., 🔴 Risky / 🟢 Safe).
+- 📦 Modular Python codebase with separate modules for each functionality.
 
-Line charts for temperature and vibration
+---
 
-Status indicators for each machine
+## 📂 Folder Structure
 
-🧰 Technologies Used
-
-Python
-
-Streamlit
-
-Pandas
-
-Plotly
-
-CSV (for lightweight simulated storage)
-
-▶️ How to Run
-
-Install Dependencies:
-
-pip install streamlit pandas plotly streamlit-autorefresh
-
-Run the Data Simulator:
-
-python machine_simulator.py
-
-Run the Dashboard:
-
-streamlit run dashboard.py
-
-The dashboard will automatically refresh every 5 seconds to display the latest data.
-
-🌟 Future Enhancements
-
-Add ML-based fault prediction
-
-Integrate MQTT/Firebase for remote updates
-
-Enable user-defined threshold alerts
-
+5G_Federated_Predictive_Maintenance/
+├── iot_simulator.py # Generates live IoT sensor data
+├── network_simulator.py # Adds simulated 5G/WiFi latency
+├── ml_trainer.py # Trains model (with optional FL logic)
+├── predictor.py # Predicts failure from live sensor data
+├── dashboard.py # Real-time Streamlit dashboard
+├── requirements.txt # Python dependencies
+├── README.md # You're here!
+└── data/
+├── sensor_data.csv # Training data
+└── trained_model.pkl # Serialized ML model
